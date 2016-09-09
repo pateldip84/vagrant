@@ -7,13 +7,10 @@ chkconfig httpd on
 service httpd stop
 rm -rf /var/www/html
 ln -s /vagrant /var/www/html
-
 service httpd start
 
 #install php
 yum install -y php php-devel php-cli php-mysql
-
-
 
 #DOWNLOAD starter content
 cd /vagrant
